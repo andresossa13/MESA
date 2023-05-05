@@ -1,0 +1,22 @@
+/* ROOT */
+:root {
+    --padding: 20px;
+    /* var(--padding) */
+}
+
+/* INITIAL RULES */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    height: 100%;
+    background-color: black;
+}
+
