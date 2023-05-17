@@ -1,7 +1,11 @@
 /* ROOT */
 :root {
-  /* --padding: 20px; */
+  --padding: 24px;
   /* var(--padding) */
+  --color-white: #ffffff;
+  --color-black: #000000;
+  --color-orange: #F5B700;
+  --color-green: #CBFF5B;
 }
 
 /* INITIAL RULES */
@@ -24,29 +28,113 @@ main {
   background: linear-gradient(to bottom, #E8AEB7, #ffffff);
 }
 
+
+
+/* FONT */
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-family: 'Slabo 13px', sans-serif;
+}
+
+h1 {
+  font-size: 100px;
+}
+
+h2 {
+  font-size: 88px;
+  margin: 0;
+}
+
+h3 {
+  font-size: 48px;
+}
+
+h4 {
+  font-size: 32px;
+}
+
+h5 {
+  font-size: 16px;
+  border: 1px solid var(--color-black);
+  text-align: center;
+  border-radius: 35px;
+  padding: 24px;
+}
+
+h6 {
+  font-size: 16px;
+  text-align: center;
+}
+
+p {
+  font-size: 24px;
+  line-height: 30px;
+}
+
+a {
+  font-size: 24px;
+  line-height: 30px;
+  text-decoration: none;
+  color: black;
+}
+
+a:visited {
+  color: black;
+}
+
+
 /* HEADER / NAVIGATION */
 
 header {
-  background-color: #ffffff;
+  background-color: var(--color-white);
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 48px;
+
+  position: fixed;
+  width: 100vw;
+  height: 100px;
+
+  z-index: 9;
 }
 
-.navbar_main {}
+.navbar-main {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 16px;
 
-.navbar_main li {
+  width: 670px;
+  height: 50px;
+}
+
+.navbar-main li,
+.navbar-sides {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: flex-end;
-  width: 127px;
+  padding: 8px 16px;
+
+  width: 130px;
   height: 50px;
-  border: 1px solid #000000;
+
+  border: 1px solid var(--color-black);
   border-radius: 35px;
 }
 
-/* FOOTER */
-
-footer {
-  background-color: #ffffff;
+.navbar-active {
+  background: linear-gradient(to bottom, var(--color-orange), var(--color-white));
 }
 
 /* CLASSES */
@@ -83,4 +171,29 @@ footer {
 
 .schedule {
   background: linear-gradient(to bottom, #ffffff, #CBFF5B);
+}
+
+.faq {
+  
+}
+
+/* FOOTER */
+
+footer {
+  background-color: var(--color-white);
+  text-align: center;
+  padding: var(--padding);
+
+}
+
+.footer-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-left,
+.footer-right {
+  width: 50%;
+  border: 1px solid var(--color-black);
 }
