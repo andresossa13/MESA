@@ -310,11 +310,39 @@ header {
 
 /* HOODIE */
 
+button {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+  font-size: 100%;
+  font-family: inherit;
+  cursor: pointer;
+  outline: none;
+}
+
+
+.CTA {
+  background: var(--color-white);
+  text-align: center;
+
+  width: 147px;
+  height: 50px;
+
+  padding: 8px 16px;
+
+  border: 1px solid var(--color-black);
+  border-radius: 35px;
+  line-height: 32px;
+}
+
 .hoodie {
+  background: linear-gradient(to bottom, var(--color-orange), var(--color-white));
+
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: stretch;
   width: 100%;
   margin: 0 auto;
 }
@@ -338,8 +366,8 @@ header {
   width: 48%;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
   align-items: center;
+  justify-content: center;
 }
 
 .design-choice,
@@ -356,6 +384,7 @@ header {
 
 /* CHIPS */
 .chips-container {
+  background: linear-gradient(to bottom, var(--color-orange), var(--color-white));
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -411,6 +440,27 @@ header {
   flex-direction: column;
   justify-content: space-between;
 }
+
+/* FAQ */
+.faq {
+  background: linear-gradient(to bottom, var(--color-white), var(--color-green));
+}
+
+.faq-qa {
+  padding: var(--padding);
+  width: 50%;
+}
+
+.faq-qa p {
+  margin-bottom: 50px;
+
+}
+
+.faq-qa p:last-child {
+  margin-bottom: 0px;
+  
+}
+
 
 /* FOOTER */
 footer {
