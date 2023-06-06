@@ -14,34 +14,17 @@
 
   <!-- HEADER -->
   <header>
-    <a href="index.html" class="navbar-sides">
-      home</a>
+    <a href="index.html" class="a-button">home</a>
+
     <nav>
-      <ul class="navbar-main">
-        <li>
-          <a href="tickets.html">
-            tickets</a>
-        </li>
-        <li>
-          <a href="about.html">
-            about</a>
-        </li>
-        <li>
-          <a href="news.html">
-            news</a>
-        </li>
-        <li class="navbar-active">
-          <a href="product.html">
-            merch</a>
-        </li>
-        <li>
-          <a href="reviews.html">
-            reviews</a>
-        </li>
-      </ul>
+        <a href="tickets.html" class="a-button tickets">Tickets</a>
+        <a href="about.html" class="a-button about">About</a>
+        <a href="#" class="a-button news">News</a>
+        <a href="#" class="a-button merch">Merch</a>
+        <a href="#" class="a-button reviews">Reviews</a>
     </nav>
-    <a href="#" class="navbar-sides">
-      search</a>
+
+    <a href="#search" class="a-button">seacrh</a>
   </header>
 
   <!-- HERO SECTION -->
@@ -128,66 +111,69 @@
     </main>
 
   <!-- DISCOVER MORE SECTION -->
-  <section class="discover">
-    <div>
-      <h4>Mon 19 april 2023</h4>
-      <div><img src="" alt=""></div>
-      <h4>
-        <a href="review1.html">Summer Indie Watchlist</a>
-      </h4>
-      <p>Get ready for summer with 5 upcoming indie games to delight! Check out the
-        watchlist for gaming thrills! #SummerWatchlist</p>
-    </div>
-    <div>
-      <h4>Mon 19 april 2023</h4>
-      <div><img src="" alt=""></div>
-      <h4>
-        <a href="review2.html">From Pixel Art to Epic Adventures</a>
-      </h4>
-      <p>Explore how indie games captivate young gamers with their pixel art to epic
-        adventures, shaping the gaming landscape!</p>
-    </div>
-    <div>
-      <h4>Mon 19 april 2023</h4>
-      <div><img src="" alt=""></div>
-      <h4>
-        <a href="review3.html">Redefining Fun</a>
-      </h4>
-      <p>Indie games redefine fun, shaping the gaming landscape with innovative
-        approaches. Discover the impact they have on the gaming landscape!
-        #GamingLandscape</p>
-    </div>
-    <div>
-      <h4>Mon 19 april 2023</h4>
-      <div><img src="" alt=""></div>
-      <h4>
-        <a href="review4.html">Silksong unleashed</a>
-      </h4>
-      <p>Discover the latest updates on Silksong, the highly-anticipated indie game
-        from Team Cherry, unveiled at E3! Exciting new systems await in this upcoming
-        adventure!</p>
-    </div>
-  </section>
+  <article  class="news-section">
+    <a href="review1.html" class="news-card-25">
+      <div class="news-card">
+        <p>Mon 19 april 2023</p>
+        <img src="img/home-news-indie--summer--watchlist.png" alt="Text displaying top 10 games next fest february 2023.">
+        <h4>Summer Indie Watchlist</h4>
+        <p>Get ready for summer with 5 upcoming indie games to delight! Check out the watchlist for gaming thrills! #SummerWatchlist</p>
+      </div>
+    </a>
+
+    <a href="review2.html" class="news-card-25">
+      <div class="news-card">
+        <p>Mon 19 april 2023</p>
+        <img src="img/home-news-from--pixel--art.png" alt="A screenshot of Maetodl Games pixel art">
+        <h4>From Pixel Art to Epic Adventures</h4>
+        <p>Explore how indie games captivate young gamers with their pixel art to epic adventures, shaping the gaming landscape!</p>
+      </div>
+    </a>
+
+    <a href="review3.html" class="news-card-25">
+      <div class="news-card">
+        <p>Mon 19 april 2023</p>
+        <img src="img/home-news-redefining--fun.png" alt="A thumbnail with the text but what exactly is fun on top of a Mario's Brothers level.">
+        <h4>Redefining Fun</h4>
+        <p>Indie games redefine fun, shaping the gaming landscape with innovative approaches. Discover the impact they have on the gaming landscape! #GamingLandscape</p>
+      </div>
+    </a>
+
+    <a href="review4.html" class="news-card-25">
+      <div class="news-card">
+        <p>Mon 19 april 2023</p>
+        <img src="img/home-news-redefining--fun-1.png" alt="The anticipated cover of Silksong, the word Silksong can be read on it.">
+        <h4>Silksong unleashed</h4>
+        <p>Discover the latest updates on Silksong, the highly-anticipated indie game from Team Cherry, unveiled at E3! Exciting new systems await in this upcoming adventure!</p>
+      </div>
+    </a>
+  </article>
 
   <!-- FOOTER SECTION -->
   <footer>
-    <div>
-      <h5>SIGN UP TO OUR NEWSLETTER</h5>
-      <h2>INDIEPALOOZA</h2>
-    </div>
-    <div class="footer-flex">
-      <div class="footer-left">
-        <h4>CONTACT</h4>
-        <p>contactinfo@indiepalloza.com</p>
-      </div>
-      <div class="footer-right">
-        <h4>COLLAB</h4>
-        <p>collabcollab@indiepalloza.com</p>
+    <div  class="cta-long-wrapper">
+        <div class="cta-long">
+        <a href="#">Sign up to the newsletter</a>
       </div>
     </div>
-    <h6>SITE BY MESA</h6>
-    <h6>@2023</h6>
+
+    <p class="logo">Indiepalooza</p>
+
+    <section class="footer-contact">
+      <div class="footer-contact-item">
+        <h4>Contact</h4>
+        <a href="#">info@indiepalloza.com</a>
+      </div>
+
+      <div class="footer-contact-item">
+        <h4>Collab</h4>
+        <a href="#">collab@indiepalloza.com</a>
+      </div>
+    </section>
+
+    <p>Site by MESA <span>&#169;</span>2023</p>
   </footer>
+
 </body>
 
 </html>

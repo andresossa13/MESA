@@ -22,12 +22,12 @@ body {
 
   font-family: 'Slabo 13px', sans-serif;
 
-  background-color: #ffffff;
-  color: #000000;
+  background-color: var(--color-white);
+  color: var(--color-black);
 }
 
 main {
-  background: linear-gradient(to bottom, #E8AEB7, #ffffff);
+  background: linear-gradient(to bottom, var(--color-pink), var(--color-white));
 }
 
 /* FONT */
@@ -71,12 +71,12 @@ a {
 
   text-transform: uppercase;
   text-decoration: none;
-  color: black;
+  color: var(--color-black);
 }
 a:hover {
   text-transform: uppercase;
   text-decoration: underline;
-  color: black;
+  color: var(--color-black);
 }
 
 .a-button {
@@ -86,7 +86,7 @@ a:hover {
 
   text-transform: uppercase;
   text-decoration: none;
-  color: black;
+  color: var(--color-black);
 
   padding: 8px 16px;
   width: auto;
@@ -97,7 +97,7 @@ a:hover {
 .a-button:hover {
   text-transform: uppercase;
   text-decoration: none;
-  color: black;
+  color: var(--color-black);
 }
 
 .cta-circle {
@@ -113,7 +113,7 @@ a:hover {
   align-items: center;
   justify-content: center;
 
-  border: 1px solid #000;
+  border: 1px solid var(--color-black);
   border-radius: 100%;
 }
 
@@ -124,7 +124,7 @@ a:hover {
 
   text-align: center;
 
-  border: 1px solid #000;
+  border: 1px solid var(--color-black);
   border-radius: 50px;
 }
 .cta-long-wrapper {
@@ -143,7 +143,7 @@ a:hover {
   top: 91px;
 
   background-color: var(--color-white);
-  border: 1px solid #000;
+  border: 1px solid var(--color-black);
 }
 
 
@@ -170,19 +170,19 @@ header {
 }
 
 .tickets:hover {
-  background: linear-gradient(to bottom, #E8AEB7, #ffffff); 
+  background: linear-gradient(to bottom, var(--color-pink), var(--color-white)); 
 }
 .about:hover:hover {
-  background: linear-gradient(to bottom, #5CB8FF, #ffffff); 
+  background: linear-gradient(to bottom, var(--color-blue), var(--color-white)); 
 }
 .news:hover {
-  background: linear-gradient(to bottom, #CBFF5B, #ffffff); 
+  background: linear-gradient(to bottom, var(--color-green), var(--color-white)); 
 }
 .merch:hover {
-  background: linear-gradient(to bottom, #E8AEB7, #ffffff); 
+  background: linear-gradient(to bottom, var(--color-pink), var(--color-white)); 
 }
 .reviews:hover {
-  background: linear-gradient(to bottom, #F5B700, #ffffff); 
+  background: linear-gradient(to bottom, var(--color-orange), var(--color-white)); 
 }
 
 /* HERO */
@@ -221,11 +221,11 @@ header {
   height: auto;
   padding: 8px;
 
-  border: 1px solid #00000000;
+  border: 1px solid var(--color-black);
 }
 .news-card-50:hover {
   text-decoration: none;
-  border: 1px solid #000;
+  border: 1px solid var(--color-black);
 }
 
 .news-card-25 {
@@ -233,11 +233,11 @@ header {
   height: auto;
   padding: 8px;
 
-  border: 1px solid #00000000;
+  border: 1px solid var(--color-black);
 }
 .news-card-25:hover {
   text-decoration: none;
-  border: 1px solid #000;
+  border: 1px solid var(--color-black);
 }
 
 /* SCHEDULE */
@@ -247,7 +247,7 @@ header {
   margin: 0;
   padding: 0;
 
-  background: linear-gradient(to bottom, #fff, #CBFF5B);
+  background: linear-gradient(to bottom, var(--color-white), var(--color-green));
 }
 
 .schedule-bar {
@@ -262,7 +262,7 @@ header {
   justify-content: space-between;
   align-items: baseline;
 
-  border: 1px solid #000;
+  border: 1px solid var(--color-black);
   border-radius: 50px;
 }
 
@@ -276,8 +276,8 @@ header {
   flex-direction: row;
   flex-wrap: nowrap;
 
-  background-color: #0000;
-  border: 1px solid #000;
+  background-color: var(--color-black);
+  border: 1px solid var(--color-black);
 }
 .accordion-s1 {
   width: 50%;
@@ -295,7 +295,7 @@ header {
 .panel {
   width: 100%;
 
-  border-bottom: 0px solid #000;
+  border-bottom: 0px solid var(--color-black);
 }
 .schedule-panel {
   width: 100%;
@@ -306,6 +306,110 @@ header {
 }
 .schedule-info {
   grid-column: 2 / 3;
+}
+
+/* HOODIE */
+
+button {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+  font-size: 100%;
+  font-family: inherit;
+  cursor: pointer;
+  outline: none;
+}
+
+
+.CTA {
+  background: var(--color-white);
+  text-align: center;
+
+  width: 147px;
+  height: 50px;
+
+  padding: 8px 16px;
+
+  border: 1px solid var(--color-black);
+  border-radius: 35px;
+  line-height: 32px;
+}
+
+.hoodie {
+  background: linear-gradient(to bottom, var(--color-orange), var(--color-white));
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: stretch;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.hoodie-details {
+  width: 48%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin: 0 auto;
+}
+
+.hoodie-details img {
+  width: 80%;
+  height: auto;
+  margin: 0 10px;
+}
+
+.hoodie-customization {
+  width: 48%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.design-choice,
+.color-choice,
+.dimension-choice {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(3, auto);
+  gap: 10px;
+  margin: var(--padding);
+}
+
+/* CHIPS */
+.chips-container {
+  background: linear-gradient(to bottom, var(--color-orange), var(--color-white));
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.chip {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 25%;
+
+  border: 1px solid var(--color-black);
+  padding: var(--padding);
+  margin-bottom: 10px;
+}
+
+.chip img {
+  max-width: 100%;
+  height: auto;
+}
+
+.bottom {
+  margin-top: auto;
 }
 
 /* DONATE */
@@ -337,6 +441,27 @@ header {
   justify-content: space-between;
 }
 
+/* FAQ */
+.faq {
+  background: linear-gradient(to bottom, var(--color-white), var(--color-green));
+}
+
+.faq-qa {
+  padding: var(--padding);
+  width: 50%;
+}
+
+.faq-qa p {
+  margin-bottom: 50px;
+
+}
+
+.faq-qa p:last-child {
+  margin-bottom: 0px;
+  
+}
+
+
 /* FOOTER */
 footer {
   width: 100%;
@@ -367,7 +492,7 @@ footer {
   flex-direction: column;
   align-items: center;
 
-  border: 0.5px solid #000;
+  border: 0.5px solid var(--color-black);
 }
 
 /* TICKETS PAGE MAIN*/
@@ -414,7 +539,7 @@ footer {
 
 
 .marketplace {
-  background: linear-gradient(to bottom, #F5B700, #ffffff) !important; 
+  background: linear-gradient(to bottom, var(--color-orange), var(--color-white)) !important; 
 }
 
 .circle {
@@ -426,23 +551,23 @@ footer {
   height: 450px;
   left: 1446px;
   top: 487px;
-  border: 2px solid #000000;
+  border: 2px solid var(--color-black);
   border-radius: 50%;
 }
 
 
 .donate {
-  background-color: #5CB8FF;
+  background-color: var(--color-blue);
 }
 
 .schedule {
-  background: linear-gradient(to bottom, #ffffff, #CBFF5B);
+  background: linear-gradient(to bottom, var(--color-white), var(--color-green));
 }
 
 /* DONATE */
 
 .donate {
-  background-color: #5CB8FF;
+  background-color: var(--color-blue);
   position: relative;
   height: 570px;
   padding: var(--padding);
