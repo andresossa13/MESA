@@ -30,6 +30,10 @@ main {
   background: linear-gradient(to bottom, var(--color-pink), var(--color-white));
 }
 
+.white {
+  color: var(--color-white);
+}
+
 /* FONT */
 h1 {
   margin: 0;
@@ -191,8 +195,6 @@ header {
   height: 90vh;
   margin: 0;
   padding: var(--padding);
-
-  background-color: var(--color-white);
 }
 .hero-text {
   width: 50%;
