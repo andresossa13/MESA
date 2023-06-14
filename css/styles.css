@@ -28,6 +28,27 @@ body {
 
 main {
   background: linear-gradient(to bottom, var(--color-pink), var(--color-white));
+  padding: var(--padding);
+}
+
+main p {
+  padding: var(--padding);
+  max-width: 1000px;
+  overflow-wrap: break-word;
+}
+
+main h4 {
+  padding: var(--padding);
+  max-width: 1000px;
+  overflow-wrap: break-word;
+}
+
+main img {
+  padding: var(--padding);
+}
+
+.white {
+  color: var(--color-white);
 }
 
 /* FONT */
@@ -191,8 +212,6 @@ header {
   height: 90vh;
   margin: 0;
   padding: var(--padding);
-
-  background-color: var(--color-white);
 }
 .hero-text {
   width: 50%;
