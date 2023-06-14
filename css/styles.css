@@ -67,7 +67,7 @@ h3 {
   font-size: 24px;
   line-height: 32px;
   font-weight: 500;
-  padding: var(--padding);
+  padding-left: var(--padding);
 }
 
 h4 {
@@ -75,7 +75,7 @@ h4 {
   font-size: 20px;
   line-height: 28px;
   font-weight: 500;
-  padding: var(--padding);
+  padding-left: var(--padding);
 }
 
 p {
